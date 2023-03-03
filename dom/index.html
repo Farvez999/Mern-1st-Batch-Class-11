@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <style>
+        h3 {
+            color: blue;
+        }
+
+        .tour {
+            background-color: blueviolet;
+        }
+
+        #sub-title {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Welcome Our new Class 11</h1>
+    <h3 id="sub-title">Anthoder Style added</h3>
+
+    <section>
+        <h1 class="tour">Tourest Please in Dhaka</h1>
+        <ul>
+            <li>Dia Bari</li>
+            <li>Sonar Ghao</li>
+            <li>Zooz</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1 class="tour">Tourest Please in Bangladesh</h1>
+        <ul class="tour-ban">
+            <li id="cox">Coxs Bazar</li>
+            <li>Sundar ban</li>
+            <li>Bandar ban</li>
+            <li>Rangamati</li>
+        </ul>
+
+        <ul class="tour-ban">
+            <li>Bazar</li>
+            <li> ban</li>
+            <li> ban</li>
+            <li>Rangamati</li>
+        </ul>
+    </section>
+
+
+    <script src="js/dom.js"></script>
+
+    <script>
+        console.log('insite js file link');
+
+        const ulCollactions = document.getElementsByClassName('tour-ban')
+        console.log(ulCollactions);
+        for (const ul of ulCollactions) {
+            console.log(ul.innerHTML);
+        }
+
+        // document.getElementById('sub-title').style.backgroundColor = 'black'
+        // document.getElementById('cox').style.color = 'yellow'
+
+    </script>
+</body>
+
+</html>
